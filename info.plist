@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>Christoffer Skeppstedt</string>
 	<key>description</key>
-	<string>Enter your JIRA ticket to open the full URL in your browser.</string>
+	<string>Enter your JIRA ticket number to get a full URL</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -84,7 +84,13 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>## Setup
+
+1. Right click the workflow "Jira browse ticket" and select "Show in Finder"
+2. Open projects.txt
+3. Add the full URL for your JIRA setup, with the project prefix. Example: https://your.jira.com/PROJ
+
+Now you can use Alfred and enter "jira 12345" which will suggest "https://your.jira.com/PROJ-12345". You can repeat step 3 if you want additional projects/instances.</string>
 	<key>uidata</key>
 	<dict>
 		<key>5AFD40AB-F4BA-4F42-A4D9-3BE458317E95</key>
@@ -99,6 +105,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/cskeppstedt/alfred-jira-browse-ticket</string>
 </dict>
 </plist>

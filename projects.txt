@@ -1,0 +1,2 @@
+https://jira.sample.com/jira/browse/PROJ
+https://jira.other.com/jira/browse/FOO
