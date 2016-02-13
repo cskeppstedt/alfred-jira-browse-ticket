@@ -10,7 +10,7 @@ Workflow for Alfred 2 that opens a JIRA ticket in the browser. Enter `jira 12345
 
 ## Setup
 
-Download and install the workflow. Open alfred preferences, go to the Worflows tab.
+[Download](http://www.packal.org/workflow/jira-browse-ticket) and install the workflow. Open alfred preferences, go to the Worflows tab.
 
 1. Right click the workflow "Jira browse ticket" and select "Show in Finder"
 2. Open projects.txt
