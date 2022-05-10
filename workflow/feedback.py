@@ -1,4 +1,5 @@
 # author: Peter Okma
+# Update on 2022-05-10: Akshay Jain - using unicode encoding for ElementTree items
 import xml.etree.ElementTree as et
 
 
@@ -22,7 +23,7 @@ class Feedback():
         Returns:
             XML string
         """
-        return et.tostring(self.feedback)
+        return et.tostring(self.feedback,encoding='unicode', method='xml')
 
     def add_item(self, title, subtitle="", arg="", valid="yes", autocomplete="", icon="icon.png"):
         """
