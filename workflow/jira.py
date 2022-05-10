@@ -2,7 +2,7 @@
 
 from feedback import Feedback
 import sys
-import urllib
+import urllib.parse
 
 
 def generate_items(projects=[], query=""):
@@ -43,7 +43,7 @@ def send_feedback(feeds, items):
     for item in items:
         feeds.add_item(**item)
 
-    print feeds
+    print (feeds)
 
 
 def main(projects, query):
@@ -55,5 +55,5 @@ def main(projects, query):
 if len(sys.argv) == 2:
     with open('projects.txt') as f:
         projects = f.read().splitlines()
-        query = urllib.quote(sys.argv[1])
+        query = urllib.parse.quote(sys.argv[1])
         main(projects, query)
